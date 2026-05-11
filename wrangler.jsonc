@@ -1,0 +1,16 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "redirector-production",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-04-21",
+	"observability": {
+		"enabled": true,
+	},
+	"upload_source_maps": true,
+	"vars": { "REDIRECT_TO": "https://6715.jp" },
+	"route": {
+		"pattern": "https://narusejun.com/*",
+		"zone_name": "narusejun.com",
+	},
+	"workers_dev": false,
+}
